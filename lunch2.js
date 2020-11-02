@@ -1,4 +1,6 @@
-    function dayOfTheWeek() {
+function checkLunch() {   
+
+function dayOfTheWeek() {
       var d = new Date();
       var n = d.getDay()
       return n;
@@ -24,3 +26,6 @@
       return true;
     }
     document.getElementById("kimIsReady").innerHTML = (kimIsReady());
+}
+
+window.onload="checkLunch()";
