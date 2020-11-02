@@ -1,6 +1,6 @@
 (function() {   
-
-function dayOfTheWeek() {
+    setInterval(function(){     
+    function dayOfTheWeek() {
       var d = new Date();
       var n = d.getDay()
       return n;
@@ -26,4 +26,11 @@ function dayOfTheWeek() {
       return true;
     }
     document.getElementById("kimIsReady").innerHTML = (kimIsReady());
+
+    var today = new Date();
+    var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+
+    document.getElementById("currentTime").innerHTML = time;
+   
+}, 3000);
 })();
