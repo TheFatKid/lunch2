@@ -32,5 +32,5 @@
 
     document.getElementById("currentTime").innerHTML = time;
    
-}, 3000);
+}, 1000);
 })();
